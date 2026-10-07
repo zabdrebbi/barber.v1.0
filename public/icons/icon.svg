@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14141b"/>
+      <stop offset="100%" stop-color="#0b0b0f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#d4a72c"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="24" y="24" width="464" height="464" rx="92" fill="none" stroke="url(#gold)" stroke-width="6" opacity="0.55"/>
+  <!-- مقص -->
+  <g stroke="url(#gold)" stroke-width="26" stroke-linecap="round" fill="none">
+    <path d="M168 150 L330 360"/>
+    <path d="M344 150 L182 360"/>
+    <circle cx="150" cy="386" r="34"/>
+    <circle cx="362" cy="386" r="34"/>
+  </g>
+  <!-- شفرة حلاقة -->
+  <g fill="url(#gold)">
+    <rect x="238" y="88" width="36" height="150" rx="14"/>
+    <rect x="230" y="238" width="52" height="34" rx="10"/>
+  </g>
+</svg>
