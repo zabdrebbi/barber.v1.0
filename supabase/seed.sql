@@ -4,7 +4,7 @@
 --   update public.app_secrets set value = 'you@gmail.com' where key = 'admin_email';
 -- ============================================================
 
-insert into public.app_secrets (key, value) values ('admin_email', '{{ADMIN_EMAIL}}')
+insert into public.app_secrets (key, value) values ('admin_email', 'z.abdrebbi@gmail.com')
 on conflict (key) do nothing;
 
 insert into public.settings (id, name, phone, address, map_link, booking_closed,
