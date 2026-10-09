@@ -244,7 +244,7 @@ $$;
 
 -- من يملك الأدمن؟ يُتحقق من البريد في الخادم مقابل app_secrets (لا يُقرأ من العميل)
 create or replace function public.claim_admin_role() returns boolean
-language plpgsql stable security definer set search_path = public as $$
+language plpgsql volatile security definer set search_path = public as $$
 declare
   v_email text := coalesce(auth.jwt()->>'email', '');
   v_secret text;

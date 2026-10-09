@@ -26,11 +26,14 @@ ADMIN_EMAIL=your-email@gmail.com
 ```
 
 ## 4. نشر Edge Functions (اختياري)
+الخطوات الكاملة للنشر الفعلي (Google وVercel) في `MANUAL_STEPS.md`.
+
 ```bash
 supabase login
 supabase link --project-ref YOUR_PROJECT_REF
-supabase functions deploy book --no-verify-jwt=false
-supabase functions deploy auth-bootstrap --no-verify-jwt=false
+supabase secrets set ADMIN_EMAIL=your-email@gmail.com
+supabase functions deploy book
+supabase functions deploy auth-bootstrap
 ```
 
 ## 5. متغيرات الإنتاج
